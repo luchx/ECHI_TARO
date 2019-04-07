@@ -1,0 +1,28 @@
+@import "../../../style/common.less";
+@prefix-cls: ~"components-Form-Item";
+
+.@{prefix-cls} {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 40rpx 30rpx;
+  background: #ffffff;
+  &-title {
+    min-width: 120rpx;
+    font-size: 28rpx;
+    line-height: 28rpx;
+    color: @font-color-2;
+  }
+  &-content {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    input{
+      flex: 1;
+    }
+  }
+}
+.@{prefix-cls}-border{
+  border-bottom: 1rpx solid @border-color-thin;
+}
