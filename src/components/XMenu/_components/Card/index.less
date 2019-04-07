@@ -1,0 +1,51 @@
+@import "../../../../style/common.less";
+@prefix-cls: ~"components-menu-card";
+
+.@{prefix-cls} {
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 79rpx;
+  &-header {
+    image {
+      width: 146rpx;
+      height: 146rpx;
+    }
+  }
+  &-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 29rpx;
+    &-name {
+      font-size: 26rpx;
+      color: @font-color-2;
+      padding-bottom: 27rpx;
+    }
+    &-description {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      height: 60rpx;
+
+      flex: 1;
+      color: @font-color-9;
+      font-size: 22rpx;
+      margin-bottom: 7rpx;
+    }
+    &-footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      &-price {
+        flex: 1;
+        font-size: 30px;
+        color: @font-color-2;
+      }
+    }
+  }
+}
