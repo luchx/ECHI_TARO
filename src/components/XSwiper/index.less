@@ -1,0 +1,35 @@
+@import "../../style/common.less";
+@prefix-cls: ~"components-swiper";
+
+.@{prefix-cls} {
+  /* 兼容 */
+  width: 100%;
+  position: relative;
+  /* 兼容 */
+  swiper{
+    image{
+      height: 280rpx;
+    }
+  }
+  &-doc {
+    position: absolute;
+    bottom: 18rpx;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &-item {
+      width: 20rpx;
+      height: 3rpx;
+      float: left;
+      margin: 0 5rpx;
+      background-color: @font-color-2;
+      border-radius: 2rpx;
+      opacity: 0.2;
+      &-active{
+        background: #ffffff;
+        opacity: 1;
+      }
+    }
+  }
+}

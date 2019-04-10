@@ -1,0 +1,26 @@
+@import "../../style/common.less";
+@prefix-cls: ~"components-tabs";
+
+.@{prefix-cls} {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: #ffffff;
+  font-size: 26rpx;
+  color: @font-color-9;
+  box-shadow: 0rpx 5rpx 5rpx 0rpx rgba(0, 0, 0, 0.07);
+  // z-index只有在定位的时候才会生效
+  position: relative;
+  z-index: 9;
+  padding-top: 15rpx;
+  &-left,&-right {
+    flex: 1;
+    text-align: center;
+    padding-bottom: 5rpx;
+    border-bottom: 3rpx solid transparent;
+  }
+  &-active {
+    color: @color-primary;
+    border-bottom: 3rpx solid @color-primary;
+  }
+}
