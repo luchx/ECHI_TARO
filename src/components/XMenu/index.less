@@ -1,0 +1,60 @@
+@import "../../style/common.less";
+@prefix-cls: ~"components-menu";
+
+.@{prefix-cls} {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  background-color: #ffffff;
+  font-size: 26rpx;
+  color: @font-color-9;
+  &-sider {
+    min-width: 160rpx;
+    max-width: 160rpx;
+    color: #888888;
+    font-size: 26rpx;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    &-item {
+      padding: 53rpx 23rpx;
+      &-active {
+        color: @font-color-2;
+        background-color: #ffffff;
+      }
+    }
+  }
+  &-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background: #ffffff;
+    &-inner{
+      padding: 0 20rpx;
+    }
+    &-header{
+      &-banner{
+        image {
+          width: 550rpx;
+          height: 280rpx;
+          opacity: 0.97;
+        }
+      }
+      &-swiper {
+        margin-top: 16rpx;
+        margin-bottom: 16rpx;
+      }
+    }
+    &-list {
+      &-title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 22rpx;
+        padding-top: 19rpx;
+        padding-bottom: 22rpx;
+        color: @font-color-2;
+      }
+    }
+  }
+}

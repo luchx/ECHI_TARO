@@ -1,0 +1,29 @@
+@import "../../../../../style/common.less";
+@prefix-cls: ~"components-menu-modal-detail-item";
+
+.@{prefix-cls} {
+  &-title {
+    font-size: 26px;
+    color: @font-color-7;
+    margin-bottom: 20rpx;
+  }
+  &-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &-item{
+      font-size: 24rpx;
+      padding: 16rpx 23rpx;
+      border: solid 1px #f5f5f5;
+      background-color: #f5f5f5;
+      border-radius: 8rpx;
+      margin: 0rpx 20rpx 20rpx 0;
+      &-active{
+        color: #f8d0b7;
+        font-size: 24px;
+        border: solid 1px #f8d0b7;
+        background-color: #fff1e8;
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+@import "../../../../style/common.less";
+@prefix-cls: ~"components-menu-modal-detail";
+
+.@{prefix-cls} {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  &-header {
+    image {
+      width: 300rpx;
+      height: 300rpx;
+    }
+    padding: 0 165rpx;
+  }
+  &-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    &-name {
+      font-size: 30rpx;
+      color: @font-color-2;
+      padding-bottom: 27rpx;
+      padding: 29rpx 0 50rpx 0;
+    }
+    &-description {
+      padding-top: 10rpx;
+      padding-bottom: 25rpx;
+      overflow: hidden;
+      &-title {
+        font-size: 24px;
+        color: @font-color-7;
+        margin-bottom: 20rpx;
+      }
+      &-content{
+        font-size: 22rpx;
+        color: @font-color-9;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+  &-footer {
+    border-top: 1rpx solid #e1e1e1;
+    padding-top: 20rpx;
+    display: flex;
+    flex-direction: column;
+    &-calc {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 28rpx;
+      &-content{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        &-price {
+          flex: 1;
+          font-size: 34rpx;
+          color: @font-color-2;
+        }
+        &-description {
+          flex: 1;
+          font-size: 22rpx;
+          height: 32rpx;
+          color: @font-color-9;
+        }
+      }
+      &-price {
+        flex: 1;
+        font-size: 34rpx;
+        color: @font-color-2;
+      }
+    }
+  }
+}
