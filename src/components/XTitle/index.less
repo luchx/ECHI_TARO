@@ -1,0 +1,20 @@
+@import "../../style/common.less";
+@prefix-cls: ~"components-title";
+
+.@{prefix-cls} {
+  margin-top: 35rpx;
+  margin-bottom: 35rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 36rpx;
+  line-height: 36rpx;
+  color: @font-color-2;
+  &::before {
+    content: "";
+    width: 6rpx;
+    background: @font-color-2;
+    border-radius: 3rpx;
+    margin-right: 13rpx;
+    margin-top: 4rpx;
+  }
+}
