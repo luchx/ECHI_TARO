@@ -1,0 +1,48 @@
+@import "../../../../style/common.less";
+.page-address {
+  padding-top: 20rpx;
+  background: #ffffff;
+  .page-content-top {
+    background: @bj-background-default;
+    padding-top: 20rpx;
+    padding-bottom: 20rpx;
+  }
+  &-location {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    &-content {
+      flex: 1;
+    }
+    .placeholder {
+      color: @font-color-9;
+    }
+  }
+  &-switch {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    /*swtich样式-start*/
+    /*swtich整体大小*/
+    .wx-switch-input {
+      width: 76rpx;
+      height: 40rpx;
+      background: red;
+    }
+    /*白色样式（false的样式）*/
+    .wx-switch-input::before {
+      width: 76rpx;
+      height: 40rpx;
+      background-color: #eeeeee;
+    }
+    /*绿色样式（true的样式）*/
+    .wx-switch-input::after {
+      width: 35rpx;
+      height: 35rpx;
+    }
+  }
+  .page-footer {
+    padding: 30rpx;
+  }
+}
