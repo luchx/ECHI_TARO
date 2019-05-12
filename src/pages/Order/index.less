@@ -1,0 +1,26 @@
+@import "../../style/common.less";
+  /* 兼容 */
+.page-header{
+  padding: 10rpx 30rpx;
+}
+.page-order{
+  background: #ffffff;
+  max-height: 100rpx;
+  .page-header{
+    align-items: center;
+    &-content{
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      font-size: 30rpx;
+      color: @font-color-2;
+    }
+  }
+  &-modal-switch {
+    display: flex;
+    flex-direction: row;
+    &-left {
+      margin-right: 136rpx;
+    }
+  }
+}
