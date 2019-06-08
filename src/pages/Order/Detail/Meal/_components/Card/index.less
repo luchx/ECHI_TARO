@@ -1,0 +1,57 @@
+@import "../../../../../../style/common.less";
+@prefix-cls: ~"page-content-meal-card";
+
+.@{prefix-cls} {
+  display: flex;
+  height: 220rpx;
+  border-radius: 18rpx;
+  margin-bottom: 30rpx;
+  overflow: hidden;
+  position: relative;
+  &-image {
+    height: 220rpx;
+    width: 100%;
+  }
+  &-mask,
+  &-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+  }
+  &-mask {
+    opacity: 0.8;
+  }
+  &-mask-info {
+    background-image: linear-gradient(90deg, #fbbb4c 0%, #f89b58 100%),
+      linear-gradient(#f0f0f0, #f0f0f0);
+  }
+  &-mask-danger {
+    background-image: linear-gradient(
+        90deg,
+        #f97e7a 0%,
+        #f66b72 50%,
+        #f25769 100%
+      ),
+      linear-gradient(#f0f0f0, #f0f0f0);
+  }
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 32rpx;
+    line-height: 32rpx;
+    &-line {
+      width: 60rpx;
+      height: 6rpx;
+      background-color: #f0f0f0;
+      border-radius: 3rpx;
+      background: #ffffff;
+      margin-top: 16rpx;
+    }
+  }
+}
