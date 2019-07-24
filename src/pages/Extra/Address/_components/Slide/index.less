@@ -1,0 +1,85 @@
+@import "../../../../../style/common.less";
+@prefix-cls: ~"page-address-slide";
+
+.@{prefix-cls} {
+  display: flex;
+  flex-direction: row;
+  background: #ffffff;
+  box-sizing: border-box;
+  margin-top: 20rpx;
+  &-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100vw;
+    min-width: 100vw;
+    padding-top: 21rpx;
+    padding-bottom: 15rpx;
+    padding-left: 30rpx;
+    &-read{
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      &-top {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 15rpx;
+        &-name {
+          font-weight: 400;
+          font-size: 28rpx;
+          line-height: 28rpx;
+          color: @font-color-2;
+          padding-right: 18rpx;
+        }
+        &-phone {
+          font-weight: 400;
+          font-size: 22rpx;
+          line-height: 22rpx;
+          color: @font-color-9;
+        }
+      }
+      &-bottom {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 26rpx;
+        line-height: 30rpx;
+        font-weight: 400;
+        &-default-icon{
+          font-size: 22rpx;
+          line-height: 22rpx;
+          color: #ffffff;
+          background-color: @color-primary;
+          padding: 5rpx 10rpx;
+          border-radius: 6rpx;
+          margin-right: 40rpx;
+        }
+      }
+    }
+    &-edit{
+      padding-right: 30rpx;
+    }
+  }
+  &-delete {
+    overflow: hidden;
+    width: 130rpx;
+    min-width: 130rpx;
+    background: #ff4a4a;
+    font-size: 28rpx;
+    line-height: 28rpx;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .none{
+    display: none
+  }
+}
+.@{prefix-cls}-animate {
+  transition: 0.2s;
+}
